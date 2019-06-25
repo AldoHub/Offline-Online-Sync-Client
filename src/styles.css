@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+HTML {
+   
+    height: 100%;
+  
+}
+
+body {
+    font-family: "Muli";
+     height: 100%;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background: #ECE9E6;  /* fallback for old browsers */
+    
+  }
+
+body * {
+    transition: all 400ms ease-in-out;
+    
+}
+.container {
+    width: 100%;
+   padding-bottom: 100px;
+    max-width: 1400px; 
+    margin: 0 auto;   
+ 
+}
+
+header {
+    position: relative;
+    height: 400px;
+}
+
+header h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 20px;
+}
+
+header div {
+    padding-top: 100px;
+    width: 40%;
+}
+header img {
+    position: absolute;
+    right: 5%;
+    top: -20px;
+    width: 600px;
+    z-index: -1;
+}
+
+main {
+    margin-top: 150px;
+    
+}
+
+form * {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form {
+    width: 40%;
+    max-width: 500px;
+}
+
+form input, form textarea {
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    font-size: 18px;
+    resize: none;
+    font-family: "Muli";
+}
+
+form input[type="submit"] {
+    width: 100px;
+    text-indent: 0px;
+    background: #1CD8D2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-weight: bold;
+    -webkit-box-shadow: 0px 10px 5px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 5px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 5px -8px rgba(0,0,0,0.75)
+}
+form input[type="submit"]:disabled {
+    background: rgb(209, 209, 209);
+    box-shadow: none;
+}
+
+.todos {
+    margin-top: 50px;
+}
+
+.item {
+    border-top: 1px solid rgb(211, 211, 211);
+    padding: 10px;
+    width: 60%;
+}
+
+button {
+    border: none;
+    background: red;
+    padding: 10px;
+    border-radius: 4px;
+    color: #eee;
+}

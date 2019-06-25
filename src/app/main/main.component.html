@@ -1,0 +1,23 @@
+
+
+<div class="form">
+<form (ngSubmit)="addTodo(todoForm.value)" [formGroup]="todoForm">
+
+<p>Fill the form to add a new post.</p>  
+<label for="title">Title:</label>
+<input type="text" formControlName="title">
+
+<label for="content">Content:</label>
+<textarea formControlName="content"></textarea>
+
+<input type="submit" [disabled]="!todoForm.valid" value="Submit">
+</form>
+</div>
+
+<div class="todos">
+  <div *ngFor="let todo of todos" class="item">
+    <h2>{{ todo.title }}</h2>
+    <p>{{ todo.content }}</p>
+    <button (click)="delete(todo._id)">Delete</button>
+  </div>
+</div>
